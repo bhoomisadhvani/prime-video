@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body{
+    background-color: black;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-left{
+
+display: flex;
+justify-content: space-between;
+height:80px;
+background-color: #00050d;
+align-items: center;
+color: white;
+padding: 4vh;
+
+}
+
+.navbar-logo {
+  
+    margin: ;
+  
+
+}
