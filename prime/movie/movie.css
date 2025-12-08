@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 6vh;
+  background-color: #00050d;
+  align-items: center;
+  color: white;
+  padding: 4vh;
+}
+
+.nav-left ul,
+.nav-right ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-logo {
+  width: 6vw;
+}
+
+.svg-icon,
+.grid-svg {
+  filter: invert(1);
+}
+
+.user-svg {
+  width: 2vw;
+}
+
+.join-btn {
+  height: 4vh;
+  width: 5vw;
+  border-radius: 5px;
+  border: none;
+  background-color: #157bcf;
+  color: white;
+  font-size: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.languages {
+  display: none;
+  position: absolute;
+  min-width: 600px;
+  column-count: 4;
+  column-gap: 50px;
+  background-color: rgb(20, 18, 18, 0.2);
+  right: 0;
+  top: 100%;
+  backdrop-filter: blur(5px);
+  margin-top: 8px;
+}
+
+.dropdown:hover .languages {
+  display: block;
+  margin-top: 20px;
+}
+
+.languages a {
+  text-decoration: none;
+  font-size: 2vh;
+  color: white;
+  margin-top: 20px;
+  display: block;
+}
+
+.container {
+  background-image: url(./asset/movie-k.webp);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 15rem;
+  transition: all 1s ease-in;
+}
+
+.content img {
+  width: 25vw;
+}
+
+.rank {
+  color: #37f1a3;
+}
+
+.description {
+  display: none;
+  position: relative;
+  font-size: 20px;
+}
+
+.content:hover .description {
+  display: block;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
+.join-btn {
+  height: 60px;
+  width: 150px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.circle-btn {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border: none;
+  font-size: 20px;
+}
+
+.fa-bag-shopping {
+  color: gold;
+}
+
+#movie {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 5rem;
+  /* margin-top: 20px; */
+}
+
+.movie-type {
+  display: flex;
+  gap: 30px;
+}
+
+.movie-card {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 100px;
+}
+
+.card {
+  height: 400px;
+  width: 350px;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.movie-image {
+  height: 200px;
+  width: 345px;
+  border-radius: 10px;
+}
+
+.hidden-detail {
+  display: none;
+  position: relative;
+}
+
+.card:hover .hidden-detail {
+  display: block;
+}
